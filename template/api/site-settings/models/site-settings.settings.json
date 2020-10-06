@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "name": "Site Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "URL": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}
